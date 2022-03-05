@@ -1,0 +1,38 @@
+/* Web Fonts ----------------------- */
+
+/* nav {
+    background-color: #829356;
+  padding: 25px;
+} */
+
+/* Base Styles ---------------------*/
+* {
+  box-sizing: border-box;
+  border: solid 1px red;
+  /* to test borders */
+}
+
+body {
+  margin: 0 auto; /* removes default margin it makes top bottom 0 and left right auto */
+  max-width: 1024px;
+}
+
+ul {
+  list-style: none; /* removes default bullet points */
+  padding-left: 0; /* removes default left identation */
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Main Styles ---------------------*/
+nav {
+  font-family: "Roboto", Arial, Verdana;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  background-color: #829356;
+  padding: 25px;
+}
+
+/* Media Queries ---------------------*/
