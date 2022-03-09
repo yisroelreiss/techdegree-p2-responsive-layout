@@ -3,6 +3,8 @@
 /* Base Styles ---------------------*/
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   border: solid 1px red;
   /* to test borders */
 }
@@ -26,8 +28,8 @@ h1,
   text-align: center;
 }
 
-.top-nav, .top-nav a
- {
+.top-nav,
+.top-nav a {
   width: 100%;
 }
 
@@ -60,3 +62,37 @@ nav {
 }
 
 /* Media Queries ---------------------*/
+
+@media (min-width: 760px) {
+  .top-nav {
+    margin-top: 0;
+  }
+
+  .top-nav li {
+    display: inline-block;
+    width: auto;
+    margin-right: 15px;
+    background-color: transparent;
+  }
+  .top-nav li:last-child {
+    margin-right: 0;
+  }
+
+  .top-nav a {
+    color: #fff;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .top-nav,
+  .top-nav li {
+    width: initial;
+    margin-bottom: 0;
+  }
+}
