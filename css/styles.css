@@ -1,20 +1,38 @@
 /* Web Fonts ----------------------- */
 
 /* Base Styles ---------------------*/
-
-/* 👀 Nav Styles ---------------------*/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: solid 1px red;
-  /* to test borders */
+  /* border: solid 1px red;   to test borders */
+}
+body {
+  background-color: ghostwhite;
+}
+/* 👀 Nav Styles ---------------------*/
+header li {
+  color: black;
+}
+
+nav h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
 }
 
 body {
   margin: 0 auto; /* removes default margin it makes top bottom 0 and left right auto */
   max-width: 1024px;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
+
+/* body {
+  color: black; 
+  background-color: #093145; 
+} */
 
 ul {
   list-style: none; /* removes default bullet points */
@@ -22,6 +40,8 @@ ul {
 }
 
 a {
+  text-transform: uppercase;
+  color: black;
   text-decoration: none; /* removes default underlining of links identation */
 }
 
@@ -35,9 +55,8 @@ h1,
   width: 100%;
 }
 
-h1 a,
-.top-nav a {
-  color: #000;
+.top-nav li {
+  background-color: white;
 }
 
 .top-nav {
@@ -47,7 +66,7 @@ h1 a,
 .top-nav li {
   padding: 10px 0;
   margin: 5px auto;
-  background-color: #fff;
+  color: black;
 }
 
 .top-nav a {
@@ -58,11 +77,39 @@ nav {
   font-family: "Roboto", Arial, Verdana;
   font-weight: 400;
   letter-spacing: 0.05em;
-  background-color: #829356;
   padding: 25px;
 }
 
+.jumbotron {
+  padding: 0px 25px;
+}
+
+.jumbotron img {
+  display: block;
+  margin: auto;
+  padding: 0px 25px 25px 25px;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.jumbotron p {
+  padding: 0px 0px 25px 0px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
 /* 💼 Portfolio Styles ---------------------*/
+.portfolio {
+  background-color: white;
+  padding: 25px;
+}
+
+main h2 {
+  text-align: center;
+  padding: 25px;
+}
 
 .container {
   max-width: 1100px;
@@ -104,11 +151,25 @@ nav {
   background-color: #9a2617;
 }
 
+/* Footer Styles ---------------------*/
+.full {
+  display: none;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding: 0 20px;
+  height: 100px;
+}
+
 /* Media Queries ---------------------*/
 
 @media (min-width: 760px) {
   body {
-    background-color: blue;
+    /* background-color: blue; */
   }
   /* 👀 Nav Styles ---------------------*/
   .top-nav {
@@ -125,9 +186,6 @@ nav {
     margin-right: 0;
   }
 
-  .top-nav a {
-    color: #fff;
-  }
   /* 💼 Portfolio Styles ---------------------*/
   .container {
     display: flex; /* this makes all the boxes go into one row */
@@ -138,12 +196,20 @@ nav {
       50% - 20px
     ); /*ensure the boxes take up exactly 50% in our 2 column layout without breaking to a new line due to the 20px total left and right margin we added in the mobile-first code.*/
   }
+  /* Footer Styles ---------------------*/
+  .top {
+    display: none;
+  }
+  .full {
+    display: inline-block;
+    margin-left: 20px;
+  }
 }
 
 @media (min-width: 1024px) {
-  body {
+  /* body {
     background-color: blueviolet;
-  }
+  } */
   /* 👀 Nav Styles ---------------------*/
   nav {
     display: flex;
