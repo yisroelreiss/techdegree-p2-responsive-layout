@@ -5,7 +5,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: solid 1px red;   to test borders */
+  line-height: 1.5;
+  /* border: solid 1px red;   to test borders  */
 }
 body {
   background-color: ghostwhite;
@@ -97,7 +98,8 @@ nav {
 .jumbotron p {
   padding: 0px 0px 25px 0px;
   letter-spacing: 0.05em;
-  text-align: center;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /* 💼 Portfolio Styles ---------------------*/
@@ -118,15 +120,27 @@ main h2 {
   font-family: "Roboto", sans-serif;
 }
 
+.container img {
+  max-width: 100%;
+}
+
+.col h3,
+p {
+  /* border: solid 1px red;    */
+  padding: 10px;
+  font-weight: normal;
+}
+
 .col {
   margin: 10px;
   min-height: 250px;
-  color: white;
+  color: black;
   text-align: center;
   letter-spacing: 1px;
   padding-top: 5px;
 }
 
+/* 
 .box-1 {
   background-color: #093145;
 }
@@ -149,6 +163,16 @@ main h2 {
 
 .box-6 {
   background-color: #9a2617;
+} */
+.bold {
+  font-weight: 500;
+}
+
+.contact h2, p
+ {
+  padding: 10px 20px;
+  text-align: center;
+  /* border: solid 1px red;   to test borders  */
 }
 
 /* Footer Styles ---------------------*/
@@ -167,10 +191,10 @@ footer {
 
 /* Media Queries ---------------------*/
 
-@media (min-width: 760px) {
-  body {
-    /* background-color: blue; */
-  }
+@media (min-width: 768px) {
+  /* body {
+    background-color: blue;
+  } */
   /* 👀 Nav Styles ---------------------*/
   .top-nav {
     margin-top: 0;
@@ -186,6 +210,15 @@ footer {
     margin-right: 0;
   }
 
+  .jumbotron {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .item-2 {
+    order: -1;
+  }
+
   /* 💼 Portfolio Styles ---------------------*/
   .container {
     display: flex; /* this makes all the boxes go into one row */
@@ -196,6 +229,13 @@ footer {
       50% - 20px
     ); /*ensure the boxes take up exactly 50% in our 2 column layout without breaking to a new line due to the 20px total left and right margin we added in the mobile-first code.*/
   }
+  .contact p {
+    border: solid 1px red;
+    padding: 10px 100px;
+  }
+  }
+
+  
   /* Footer Styles ---------------------*/
   .top {
     display: none;
@@ -215,6 +255,10 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .jumbotron img {
+    padding: 0px 0px 25px 25px;
   }
 
   .top-nav,
