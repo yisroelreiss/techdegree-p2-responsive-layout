@@ -230,7 +230,6 @@ footer {
     ); /*ensure the boxes take up exactly 50% in our 2 column layout without breaking to a new line due to the 20px total left and right margin we added in the mobile-first code.*/
   }
   .contact p {
-    border: solid 1px red;
     padding: 10px 100px;
   }
   }
