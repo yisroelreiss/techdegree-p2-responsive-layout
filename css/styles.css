@@ -168,8 +168,8 @@ p {
   font-weight: 500;
 }
 
-.contact h2, p
- {
+.contact h2,
+p {
   padding: 10px 20px;
   text-align: center;
   /* border: solid 1px red;   to test borders  */
@@ -232,9 +232,7 @@ footer {
   .contact p {
     padding: 10px 100px;
   }
-  }
 
-  
   /* Footer Styles ---------------------*/
   .top {
     display: none;
