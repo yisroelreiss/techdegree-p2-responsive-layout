@@ -189,6 +189,11 @@ footer {
   height: 100px;
 }
 
+#content1::after {
+  content: "\a";
+  white-space: pre;
+}
+
 /* Media Queries ---------------------*/
 
 @media (min-width: 768px) {
@@ -228,9 +233,6 @@ footer {
     flex-basis: calc(
       50% - 20px
     ); /*ensure the boxes take up exactly 50% in our 2 column layout without breaking to a new line due to the 20px total left and right margin we added in the mobile-first code.*/
-  }
-  .contact p {
-    padding: 10px 100px;
   }
 
   /* Footer Styles ---------------------*/
